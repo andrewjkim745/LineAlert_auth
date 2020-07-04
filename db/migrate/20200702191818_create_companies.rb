@@ -8,6 +8,7 @@ class CreateCompanies < ActiveRecord::Migration[6.0]
       t.integer :company_number
       t.array :company_queue
       t.integer :company_avgwait
+      
 
       t.timestamps
     end
