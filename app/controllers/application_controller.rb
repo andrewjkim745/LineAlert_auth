@@ -18,6 +18,6 @@ class ApplicationController < ActionController::API
     def get_current_user
       return if !bearer_token
       decode_jwt = decode_token(bearer_token)
-      User.find(decode_jwt[0]["user"]["id"])
+      User.find(decode_jwt[0]["user"]["id"]) 
     end
   end

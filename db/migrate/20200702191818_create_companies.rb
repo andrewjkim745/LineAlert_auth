@@ -6,7 +6,7 @@ class CreateCompanies < ActiveRecord::Migration[6.0]
       t.string :company_password
       t.string :company_email
       t.integer :company_number
-      t.array :company_queue
+      # t.array :company_queue
       t.integer :company_avgwait
       
 
